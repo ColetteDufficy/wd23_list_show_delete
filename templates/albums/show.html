@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+    <p> {{ album.title }} by {{ album.artist.name }}</p>
+    <p>{{ album.year }}</p>
+    <hr>
+    <p> {{ album.stock_level }} albums left in stock</p>
+</div>
+    
+{% endblock content %}
